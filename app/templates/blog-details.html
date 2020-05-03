@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>AJAY KUMAR GARG ENGINEERING COLLEGE, GHAZIABAD, UTTAR PRADESH</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="../static/images/fav-icon/icon.png">
+
+
+	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<!-- responsive style sheet -->
+	<link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+
+
+
+	
+</head>
+
+<body>
+	<div class="main-page-wrapper">
+
+			<!-- ===================================================
+				Loading Transition
+				==================================================== -->
+				<div id="loader-wrapper">
+					<div id="loader"></div>
+				</div>
+
+
+
+			<!-- 
+			=============================================
+				Theme Header
+			============================================== 
+		-->
+		<header class="theme-menu-wrapper menu-style-one">
+			<div class="container">
+				<div class="header-wrapper clearfix">
+					<!-- Logo -->
+					<div class="logo float-left tran4s">
+						<a href="/"><img alt="Logo" src="../static/images/home/akgeclogo.png"></a>
+					</div><!-- ============================ Theme Menu ========================= -->
+					<nav class="theme-main-menu navbar" id="mega-menu-wrapper">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+						</div><!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="navbar-collapse-1">
+							<a class="mb_none" href="/"><span class="logo_span">AJAY KUMAR GARG ENGINEERING COLLEGE</span>
+								<p class="logo_para">(Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)</p></a>
+								<ul class="nav" style="float: right;">
+									<li class="menu-list">
+										<a class="tran3s" href="/">Home</a>
+									</li>
+									<li class="dropdown-holder menu-list">
+										<a class="tran3s">Event</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="{% url 'register_form' 'Technical' %}">Technical</a>
+											</li>
+											<li>
+												<a href="{% url 'register_form' 'Festival' %}">Festival</a>
+											</li>
+											<li>
+												<a href="{% url 'register_form' 'Sports' %}">Sports</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="tran3s" data-target="#help" data-toggle="modal" href="javascript:void(0);">Contact Us</a>
+									</li>
+									{% if request.user.is_authenticated %}
+									<li class="login"><button class="tran3s" data-target=".logout" data-toggle="modal"><i class="flaticon-lock"></i>Hello {{ user.username }}</button></li>
+									{% else %}
+									<li class="login"><button class="tran3s" data-target=".signInModal" data-toggle="modal"><i class="flaticon-lock"></i>Login</button></li>
+									{% endif %}	
+
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</nav><!-- /.theme-main-menu -->
+					</div><!-- /.header-wrapper -->
+				</div>
+			</header> <!-- /.theme-menu-wrapper -->
+			
+			<!-- 
+			=============================================
+				Theme Inner Banner
+			============================================== 
+		-->
+		<div class="inner-banner">
+			<div class="opacity">
+				<div class="container">
+					<h2>National Conference -Mechanical and Automation...</h2>
+					<ul>
+						<li>National Conference -Mechanical and Automation Engineering (MAAE-2020)</li>
+					</ul>
+				</div> <!-- /.container -->
+			</div> <!-- /.opacity -->
+		</div> <!-- /.inner-banner -->
+
+
+
+			<!-- 
+			=============================================
+				Blog Details
+			============================================== 
+		-->
+		<div class="our-blog blog-innner-page blog-list blog-details">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-xs-12">
+						<div class="single-blog">
+							<div class="image"><img src="../static/images/home/ME9.jpg" alt=""></div>
+							
+							<p>Department of Mechanical Engineering AKGEC organized the conference Mechanical and Automation Engineering (MAAE-2020), during 7-8 February 2020. The aim of the conference was to provide a knowledge sharing platform for researchers, academicians and industry personnel. The conference also provided an opportunity to students to get exposed to the culture of academic development and to the field of research and innovation.</p>
+							<p>Research papers were invited on topics including Unconventional Manufacturing, Automation &amp; Robotics, product Development and PLM, Non Destructive Testing, Mechatronics, Additive Manufacturing, Flexible Manufacturing System, Concurrent Engineering, Simulation and Modelling and more.</p>
+							<p>The patrons and organizers were honored to have senior academicians from IITs, NITs and other eminent technical institutions on the Technical and Advisory Board of the Conference.</p>
+							<p>Air Marsal R.K.S. Shera, PVSM, AVSM, VSM (Retd.), graced the opening ceremony as the Chief Guest, Dr. P.C. Pant, Director, HRD Innovative Projects, Ministry of New and Renewable Energy, was the Guest of Honour and Dr. Rajeev Agrawal, Associate Professor and Associate Dean (Research) , Malaviya National Institute Of Technology, Jaipur, was the Key Note Speaker. The opening ceremony was attended by Director General AKGEC Dr. R.K. Agarwal, Heads of Departments, Deans, faulty, delegates and the students.</p>
+							<p>Dr. Devender Singh, HoD Mechanical Engineering and Convenor of the Conference, introduced the theme of the Conference by sharing his industrial experiences.</p>
+							<p>Dr. R.K. Agarwal, Director General AKGEC, welcomed the guests and the participants and expressed his views on the various aspects of Automation. He conveyed his best wishes to the participants and urged them to use the conference as a great opportunity for learning and sharing.</p>
+							<p>The Chief Guest R.K.S. Shera made note of his illustrious career at the Indian Air Force and pointed out the opportunities and challenges that engineers can find in a career at the IAF. He urged the budding engineers to join the Indian Air Force for a fruitful career and service to the Nation.</p>
+							<p>Dr. P.C. Pant, Guest of Honor, deliberated on his personal experiences in the field of renewable energy and its importance in Automation and Robotics. Keynote Speaker Dr. Rajeev Agrawal, deliberated on Automation, the theme of the Conference, and further extended his talk to Autonomation – ‘Automation with human intelligence’ wherein machines can be made capable to predict defects. He sighted various case studies on Autonomation and advised the students and faculty to explore it as a new field for research.</p>
+							<p>45 papers were received from academicians and researchers from institutions including IIM Kolkata; YMCA, Faridabad; NIT Jamshedpur; Rajkiya Engineering College, Mainpuri; Chhatrapati Shivaji University, Navi Mumbai;&nbsp; Thapar Institute of Engineering and Technology, Patiala and Colleges affiliated to Dr. A.P.J. Abdul<br>Kalam Technical University, Lucknow. 36 papers were selected for presentation and inclusion in e-proceedings after a blind peer review process.</p>
+							<p>The conference ended with the valedictory function. Certificates and conference CDs were presented to the participants.</p>
+						</div> <!-- /.single-blog -->
+					</div> <!-- /.col- -->
+
+					<div class="col-md-4 col-sm-6 col-xs-12 theme-sidebar">
+						<form action="#" class="sidebar-search">
+							<input type="text" placeholder="Search">
+							<button class="tran3s"><i class="flaticon-search"></i></button>
+						</form>
+						<div class="sidebar-categories">
+							<h4>Categories</h4>
+							<ul>
+								<li><a href="https://www.akgec.ac.in/category/events/" class="tran3s" target="blank">Events</a></li>
+								<li><a href="https://www.akgec.ac.in/category/news/" class="tran3s" target="blank">News</a></li>
+								<li><a href="https://www.akgec.ac.in/category/notifications/" class="tran3s" target="blank">Notifications</a></li>
+								<li><a href="https://www.akgec.ac.in/category/upcoming-events/" class="tran3s" target="blank">Upcoming Events</a></li>
+							</ul>
+						</div> <!-- /.sidebar-categories -->
+						<div class="sidebar-recent-news">
+							<h4>Recent News</h4>
+							<ul>
+								<li class="single-news clearfix">
+									<img src="../static/images/blog/4.jpg" alt="" class="float-left">
+									<div class="post float-left">
+										<h6><a href="#" class="tran3s">How to Become  Master In Java scrpt...</a></h6>
+										<p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Apr, 2016</p>
+									</div> <!-- /.post -->
+								</li>
+								<li class="single-news clearfix">
+									<img src="../static/images/blog/5.jpg" alt="" class="float-left">
+									<div class="post float-left">
+										<h6><a href="#" class="tran3s">How to Become  Master In Java scrpt...</a></h6>
+										<p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Apr, 2016</p>
+									</div> <!-- /.post -->
+								</li>
+								<li class="single-news clearfix">
+									<img src="../static/images/blog/6.jpg" alt="" class="float-left">
+									<div class="post float-left">
+										<h6><a href="#" class="tran3s">How to Become  Master In Java scrpt...</a></h6>
+										<p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Apr, 2016</p>
+									</div> <!-- /.post -->
+								</li>
+							</ul>
+						</div> <!-- /.sidebar-recent-news -->
+					</div> <!-- /.theme-sidebar -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.our-blog -->
+
+
+
+		
+			<!-- 
+			=============================================
+				Footer
+			============================================== 
+		-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-logo">
+							<h6>About Us</h6>
+							<p>It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+							<ul>
+								<li><a href="https://www.facebook.com/Official.AKGEC" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/AKGECGZB" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCgIS1zKJvXTXcmxEPxWa4rA" class="tran3s"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.linkedin.com/school/ajay-kumar-garg-engineering-college-ghaziabad" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-3 footer-list">
+						<h6>Company</h6>
+						<ul>
+							<li><a href="about-us.html" class="tran3s">About Us</a></li>
+							<li><a href="blog-grid.html" class="tran3s">Blog</a></li>
+							<li><a href="#" class="tran3s">Become a Teacher</a></li>
+							<li><a href="contact-us.html" class="tran3s">Contact</a></li>
+							<li><a href="faq.html" class="tran3s">Faq &amp; Plicy</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-3 footer-list">
+						<h6>Product</h6>
+						<ul>
+							<li><a href="#" class="tran3s">Education Pack</a></li>
+							<li><a href="#" class="tran3s">Eucation Starter</a></li>
+							<li><a href="#" class="tran3s">Features &amp; Skills</a></li>
+							<li><a href="#" class="tran3s">Pricing</a></li>
+							<li><a href="#" class="tran3s">Sell Your Products</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-6 footer-list">
+						<h6>About us</h6>
+						<ul>
+							<li><a href="blog-list.html" class="tran3s">Blog</a></li>
+							<li><a href="#" class="tran3s">Toll Free Number</a></li>
+							<li><a href="#" class="tran3s">Press Releases</a></li>
+							<li><a href="#" class="tran3s">Jobs</a></li>
+							<li><a href="#" class="tran3s">Feedback</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-subscribe">
+						<h6>Subscribe Us</h6>
+						<p>This sounded a very good reason, and Alice was quite pleased.</p>
+						<form action="#">
+							<input type="text" placeholder="Your Email">
+							<button class="tran3s p-bg-color"><i class="flaticon-envelope-back-view-outline"></i></button>
+						</form>
+					</div>
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+
+			<div class="bottom-footer">
+				<div class="container">
+					<p class="float-left">&copy; 2020 <a href="#" class="tran3s p-color">Copyright </a>. All rights reserved. AKGEC</p>		
+				</div>
+			</div> <!-- /.bottom-footer -->
+		</footer>
+
+
+		<!-- Sign-in Modal -->
+		<div class="modal fade signInModal theme-modal-box" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body">
+						<h3>Login with Social Networks</h3>
+						<ul class="clearfix">
+							<li class="float-left"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> facebook</a></li>
+							<li class="float-left"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> Google</a></li>
+							<li class="float-left"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+							<li class="float-left"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+						</ul>
+						<form action="#">
+							<h3>Login with Site Account</h3>
+							<div class="wrapper">
+								<input type="text" placeholder="Username or Email">
+								<input type="password" placeholder="Password">
+								<ul class="clearfix">
+									<li class="float-left">
+										<input type="checkbox" id="remember">
+										<label for="remember">Remember Me</label>
+									</li>
+									<li class="float-right"><a href="#" class="s-color">Lost Your Password?</a></li>
+								</ul>
+								<button class="p-bg-color hvr-trim">Login</button>
+							</div>
+						</form>
+						<div><a href="sign-up.html" class="p-color tran3s">Not an account?? Sign Up</a></div>
+					</div> <!-- /.modal-body -->
+				</div> <!-- /.modal-content -->
+			</div> <!-- /.modal-dialog -->
+		</div> <!-- /.signInModal -->
+
+		
+
+		<!-- Scroll Top Button -->
+		<button class="scroll-top tran3s">
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</button>
+		
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script type="text/javascript" src="../static/vendor/jquery.2.2.3.min.js"></script>
+		<!-- Bootstrap Select JS -->
+		<script type="text/javascript" src="../static/vendor/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="../static/vendor/bootstrap/bootstrap.min.js"></script>
+
+		<!-- Vendor js _________ -->
+		<!-- Camera Slider -->
+		<script type='text/javascript' src='../static/vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
+		<script type='text/javascript' src='../static/vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
+		<script type='text/javascript' src='../static/vendor/Camera-master/scripts/camera.min.js'></script>
+		<!-- Mega menu  -->
+		<script type="text/javascript" src="../static/vendor/bootstrap-mega-menu/js/menu.js"></script>
+		
+		<!-- WOW js -->
+		<script type="text/javascript" src="../static/vendor/WOW-master/dist/wow.min.js"></script>
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="../static/vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- js count to -->
+		<script type="text/javascript" src="../static/vendor/Counter/jquery.counterup.min.js"></script>
+		<script src="../static/vendor/Counter/jquery.waypoints.min.js"></script>
+
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="../static/js/theme.js"></script>
+
+	</div> <!-- /.main-page-wrapper -->
+</body>
+
+<!-- Mirrored from html.heloshape.com/eskul/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Feb 2020 07:47:47 GMT -->
+</html>

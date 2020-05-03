@@ -1,0 +1,74 @@
+<html>
+
+    <head>
+        <title>AKGEC Students Details</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'>School Details</p>
+            </div>
+        <div>
+        <div class='details'>
+{% load static %}
+{% csrf_token %}
+            1. The Grub Fest <br/>
+             <br/>
+            <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/03/coverfinal1.jpg" >
+            <img src="{% static 'p2.jpg' %}">
+            {{ ob.student_name }}
+            <p> Being one of the best and biggest food festivals of Delhi, The Grub Fest is a must-attend for every foodie. With delectable delights right from the kitchens of some of the most renowned restaurants, good music and performances, this fest sure keeps you entertained. Plan a visit with your friends, indulge in some mouth-watering desserts, fill your foodie baskets and let your tummy bloat with happiness!
+                Famous For: The Grub Fest is known for bringing the best of food, music, and entertainment under one roof.
+                Where: JLN Stadium, New Delhi
+                When: The festival keeps happening once in every two to three months. The recent one is happening from 17th to 19th March.
+                Cost: Entry ticket for one day costs INR 300 for a person. Everything from food to drinks is excluded.</p>
+            <hr class='hrItem' />
+            <br/>
+            2. NASVI Street Food Festival <br/>
+            <br/>
+            <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/03/coverfinal1.jpg" >
+            <p> With its yearly street food festival, National Association Of Street Vendors Of India takes your love for street food to the next level every time before the year ends.
+                This is one of the best festivals in Delhi, which brings together 150 food stalls and around 300 lip-smacking cuisines from all across India. The festival attracts a good number of foodies every year and keeps you entertained throughout the day with its fun activities and music performances.
+                Famous For: This three day festival is famous for giving you the taste of street food from the 29 states at a very pocket-friendly price.
+                Where: JLN Stadium, New Delhi
+                When: This festival usually happens around November or December.
+                Cost: While the entry ticket costs about INR 80, the food is priced from INR 30 to INR 250</p
+            <hr class='hrItem' />
+        </div>
+    </div>
+    </body>
+</html>

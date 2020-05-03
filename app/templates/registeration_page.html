@@ -1,0 +1,182 @@
+<html>
+{% load static %}
+{% load crispy_forms_tags %}
+<head>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:200,300,400,500,600,700,800');
+    .our-event {
+      padding-bottom: 135px;
+    }
+    .theme-sidebar .sidebar-search {
+      position: relative;
+      height: 60px;
+      margin-bottom: 30px;
+      margin-top: 35px;
+    }
+    .theme-sidebar .sidebar-search input {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #e7e7e7;
+      padding: 0 62px 0 25px;
+      border-radius: 3px;
+    }
+    .theme-sidebar .sidebar-search button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 60px;
+      font-size: 20px;
+      color: #fff;
+      border-radius: 0 3px 3px 0;
+      background: #414141;
+    } 
+    .theme-sidebar .sidebar-recent-news {
+      padding: 10px 0 45px 0;
+    }
+    .theme-sidebar h4 {
+      font-size: 24px;
+      font-weight: 700;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .theme-sidebar .sidebar-recent-news li {
+      margin-bottom: 25px;
+    }
+    a{
+      color: #000 !important;
+      list-style: none;
+      text-decoration: none;
+    }
+    .theme-sidebar .sidebar-recent-news li img {
+      width: 105px;
+      border-radius: 3px;
+    }
+    .float-left {
+      float: left;
+    }
+    .theme-sidebar .sidebar-recent-news li .post {
+      width: calc(100% - 105px);
+      padding-left: 25px;
+    }
+    .theme-sidebar .sidebar-recent-news li .post h6 a {
+      font-weight: 400;
+      /*line-height: 28px;*/
+      font-size: 18px;
+      color: #000;
+    }
+    .theme-sidebar .sidebar-categories ul li a {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: #4e4e4e;
+      display: block;
+      margin-bottom: 20px;
+    }
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .theme-sidebar .sidebar-recent-news li .post p i {
+      margin-right: 8px;
+      font-size: 18px;
+      vertical-align: -1px;
+      font-weight: normal;
+      color: #afafaf;
+      font-weight: 400 important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+      <a href="/" title=""><img src="../static/images/home/akgeclogo.png" width="50" height="45" alt=""></a>
+    </nav>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto" style="float: right !important;">
+        <li class="nav-item ">
+          <a class="nav-link" href="/"> <font face="Comic Sans MS" size="5" >Home</font></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="our-blog blog-innner-page blog-list blog-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">Registration Form</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <form class="" method="POST">
+              {% csrf_token %}
+              <table align="center" border="0">
+                {{ ob|crispy }}
+                <br>
+                <button class="btn btn-primary" type="submit">save</button>
+              </table>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 theme-sidebar">
+            <form action="#" class="sidebar-search">
+              <input type="text" placeholder="Search">
+              <button class="tran3s"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="sidebar-categories">
+              <h4>Categories</h4>
+              <ul>
+                <li><a href="#" class="tran3s">Web Develoment</a></li>
+                <li><a href="#" class="tran3s">Graphic Design</a></li>
+                <li><a href="#" class="tran3s">Web Design</a></li>
+                <li><a href="#" class="tran3s">IOS/Android Development</a></li>
+                <li><a href="#" class="tran3s">Others</a></li>
+              </ul>
+            </div> <!-- /.sidebar-categories -->
+            <div class="sidebar-recent-news">
+              <h4>Recent News</h4>
+              <ul>
+                <li class="single-news clearfix">
+                  <img src="../static/images/blog/4.jpg" alt="" class="float-left">
+                  <div class="post float-left">
+                    <h6><a href="#" class="tran3s">How to Become  Master In Java scrpt...</a></h6>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Apr, 2016</p>
+                  </div> <!-- /.post -->
+                </li>
+                <li class="single-news clearfix">
+                  <img src="../static/images/blog/5.jpg" alt="" class="float-left">
+                  <div class="post float-left">
+                    <h6><a href="#" class="tran3s">How to Become  Master In Java scrpt...</a></h6>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Apr, 2016</p>
+                  </div> <!-- /.post -->
+                </li>
+                <li class="single-news clearfix">
+                  <img src="../static/images/blog/6.jpg" alt="" class="float-left">
+                  <div class="post float-left">
+                    <h6><a href="#" class="tran3s">How to Become  Master In Java scrpt...</a></h6>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Apr, 2016</p>
+                  </div> <!-- /.post -->
+                </li>
+              </ul>
+            </div> <!-- /.sidebar-recent-news -->
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
